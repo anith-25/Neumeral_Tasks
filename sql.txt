@@ -1,0 +1,2 @@
+sql
+SELECT DISTINCT name, imdb_score, premiered_on FROM movies WHERE premiered_on > '30-MARCH-2020';
