@@ -1,2 +1,5 @@
 sql
 SELECT DISTINCT name, imdb_score, premiered_on FROM movies WHERE premiered_on > '30-MARCH-2020';
+SELECT GENRE, COUNT(*) FROM GENRE, movies GROUP BY genre_id WHERE premiered_on > '30-DEC-2000';
+SELECT name, COUNT(*) FROM movies GROUP BY name HAVING COUNT(name) > 1;
+
